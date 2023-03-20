@@ -4,9 +4,7 @@ const nextConfig = {
   experimental: {
     appDir: true
   },
-  images: {
-    domains: ["icons8.com"],
-  },
+ 
 }
 
 module.exports = nextConfig
