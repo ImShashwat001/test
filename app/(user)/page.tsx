@@ -3,6 +3,7 @@ import { groq } from "next-sanity";
 import { client } from "@/lib/sanity.client";
 import { PreviewSuspense } from "next-sanity/preview";
 import PreviewBlogList from "@/components/PreviewBlogList";
+import BlogList from "@/components/BlogList";
 
 const query = groq`
     *[_type=='post'] {
@@ -28,9 +29,6 @@ export default async function HomePage() {
     const posts = await client.fetch(query);
 
     return (
-        <div>
-            {/** BlogList */}
-           <h1>Not in Preview mode</h1>
-        </div>
+        <BlogList posts={posts}/>
     )
 }
