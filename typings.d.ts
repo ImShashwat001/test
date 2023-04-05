@@ -45,3 +45,26 @@ interface Block {
     markDefs: any[];
     style: "normal" | "h1" | "h2" | "h4" | "blockquote";
 }
+
+interface Span {
+    _key: string;
+    _type: "span";
+    marks: string[];
+    text: string;
+}
+
+interface Category extends Base {
+    description: string;
+    title: string;
+}
+
+interface mainImage {
+    _type: "image";
+    asset: Reference;
+}
+
+interface Title {
+    _type: "string";
+    current: string;
+}
+
