@@ -1,4 +1,6 @@
-"use client";
+"use client"
+
+// Once "use client" is defined in a file, all other modules imported into it, including child components, are considered part of the client bundle.
 
 import { definePreview} from "next-sanity/preview"
 import { projectId, dataset } from "./sanity.client";
