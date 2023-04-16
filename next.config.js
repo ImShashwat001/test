@@ -4,6 +4,18 @@ const nextConfig = {
   experimental: {
     appDir: true
   },
+  images: {
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'sanity.io',
+        port: '3000',
+        pathname: '/',
+        domain: "sanity.io"
+        
+      }
+    ]
+  }
 }
 
 module.exports = nextConfig
