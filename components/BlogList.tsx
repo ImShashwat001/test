@@ -14,6 +14,8 @@ function BlogList({posts}: Props) {
 
       <div>
         {/** Posts */}
+        {/* mapping all the posts */}
+
         {posts.map(post => (
           <div key={post._id}>
             <Image 
