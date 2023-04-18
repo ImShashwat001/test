@@ -11,7 +11,6 @@ const nextConfig = {
         hostname: 'sanity.io',
         port: '3000',
         pathname: '/',
-        domain: "sanity.io"
         
       }
     ]
