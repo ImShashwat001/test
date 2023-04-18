@@ -5,15 +5,17 @@ const nextConfig = {
     appDir: true
   },
   images: {
-    remotePatterns: [
-      {
-        protocol: 'https',
-        hostname: 'sanity.io',
-        port: '3000',
-        pathname: '/',
+
+    domains: ["cdn.sanity.io"],
+    // remotePatterns: [
+    //   {
+    //     // protocol: 'https',
+    //     // hostname: 'sanity.io',
+    //     // port: '3000',
+    //     // pathname: '/',
         
-      }
-    ]
+    //   }
+    // ]
   }
 }
 
