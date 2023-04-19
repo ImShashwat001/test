@@ -1,3 +1,5 @@
+// used sanity.preview for previewing before publish, can be skipped if doesn't work
+
 "use client"
 
 // Once "use client" is defined in a file, all other modules imported into it, including child components, are considered part of the client bundle.
