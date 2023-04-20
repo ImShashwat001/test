@@ -13,6 +13,8 @@ const query = groq`
     } | order(_createdAt desc)
 `
 
+// used for preview model
+
 export default async function HomePage() {
     if (previewData()) {
         return (<PreviewSuspense fallback={
