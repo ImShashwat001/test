@@ -38,7 +38,7 @@ function BlogList({posts}: Props) {
               ))}
 
 <p className="font-bold">{post.title}</p>
-              {/* <p>
+              <p>
 
                 {new Date(post._createdAt).toLocaleDateString("en-US", {
                   day: "numeric",
@@ -46,13 +46,13 @@ function BlogList({posts}: Props) {
                   year: "numeric",
                 })}
               
-              </p> */}
+              </p>
             </div>
             </div>
           </div>
 
           <div className="mt-5 flex-1">
-              {/* <p className="underline text-lg font-bold">{post.title}</p> */}
+              <p className="underline text-lg font-bold">{post.title}</p>
               <p className="test-gray-500">{post.description}</p>
           </div>
           </div>
