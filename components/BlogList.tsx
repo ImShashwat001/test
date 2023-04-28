@@ -51,7 +51,7 @@ function BlogList({posts}: Props) {
             </div>
           </div>
 
-          <div className="mt-5 flex-1">
+          <div className="mt-7 flex-1">
               <p className="underline text-lg font-bold">{post.title}</p>
               <p className="test-gray-500">{post.description}</p>
           </div>
