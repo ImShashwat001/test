@@ -16,7 +16,7 @@ export default function RootLayout({
 
     
     <html lang="en">
-      <body>
+      <body className="max-w-7xl mx-auto">
       <Header />
       <Banner/>
       {children}
