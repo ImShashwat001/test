@@ -5,6 +5,8 @@ import { PreviewSuspense } from "next-sanity/preview";
 import PreviewBlogList from "@/components/PreviewBlogList";
 import BlogList from "@/components/BlogList";
 
+
+// Query of sanity
 const query = groq`
     *[_type=='post'] {
         ...,
