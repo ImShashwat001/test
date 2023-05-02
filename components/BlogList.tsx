@@ -55,7 +55,11 @@ function BlogList({posts}: Props) {
           </div>
 
           <div className="mt-7 flex-1">
+
+            {/* will fetch post titles from sanity db */}
               <p className="underline text-lg font-bold">{post.title}</p>
+
+              {/* will fetch post descriptions from sanity db */}
               <p className="test-gray-500">{post.description}</p>
           </div>
 
