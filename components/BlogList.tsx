@@ -60,7 +60,7 @@ function BlogList({posts}: Props) {
               <p className="underline text-lg font-bold">{post.title}</p>
 
               {/* will fetch post descriptions from sanity db */}
-              <p className="test-gray-500">{post.description}</p>
+              <p className="test-gray-500 line-clamp-2">{post.description}</p>
           </div>
 
                 <p className="mt-5 font-bold flex items-center group-hover:underline">
