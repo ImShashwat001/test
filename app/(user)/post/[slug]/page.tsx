@@ -1,5 +1,7 @@
 import { client } from "@/lib/sanity.client";
+import urlFor from "@/lib/urlFor";
 import { groq } from "next-sanity";
+import Image from "next/image";
 
 type Props = {
     params: {
@@ -21,8 +23,23 @@ async function Post({ params: {slug} }: Props) {
 
     console.log(post);
 
-  return <div>Post: {slug} </div>;
-  
+  return (
+    <article>
+        <section>
+            <div className="relative min-h-56 flex flex-col md:flex-row justify-between">
+                <div className="absolute top-0 w-full h-full opacity-10 blur-sm p-10">
+                    <Image
+                        className="object-cover object-center mx-auto"
+                        src={urlFor(post.mainImage).url()}
+                        alt={post.author.name}
+                        fill
+                    />
+                </div>
+            </div>
+        </section>
+    Post: {slug} 
+    </article> 
+    )
 }
 
 export default Post
