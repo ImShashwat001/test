@@ -14,6 +14,7 @@ const query = groq`
         categories[]->
     } | order(_createdAt desc)
 `
+export const revalidate = 30; // revalidate this page every 30 seconds
 
 // used for preview model
 
