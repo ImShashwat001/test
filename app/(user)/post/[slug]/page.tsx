@@ -23,7 +23,6 @@ async function Post({ params: {slug} }: Props) {
     `;
     const post: Post = await client.fetch(query, { slug });
 
-
   return (
     <article className="px-10 pb-28">
         <section className="space-y-2">
