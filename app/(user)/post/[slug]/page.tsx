@@ -3,6 +3,7 @@ import urlFor from "@/lib/urlFor";
 import { groq } from "next-sanity";
 import Image from "next/image";
 import { PortableText } from "@portabletext/react";
+import { RichTextComponents } from "@/components/RichTextComponents";
 
 type Props = {
     params: {
@@ -76,7 +77,10 @@ async function Post({ params: {slug} }: Props) {
                 </section>
             </div>
         </section>
-    Post: {slug} 
+    {/* Post: {slug}  */}
+
+    <PortableText value={post.body} components={RichTextComponents} />
+
     </article> 
     )
 }
